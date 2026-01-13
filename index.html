@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simply Resolve Support</title>
+  <meta name="description" content="Support, FAQs, and contact for Simply Resolve." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Simply Resolve Support Home">
+        <img src="assets/icon.svg" alt="" class="brand-icon" />
+        <span class="brand-name">Simply Resolve</span>
+        <span class="brand-sub">Support</span>
+      </a>
+      <nav class="nav">
+        <a href="#faq">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a class="button small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Support for Simply Resolve</h1>
+          <p class="lead">
+            Find quick answers, report a bug, or contact the developer.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#contact">Contact Support</a>
+            <a class="button secondary" href="#faq">Browse FAQ</a>
+          </div>
+
+          <div class="callouts">
+            <div class="callout">
+              <div class="callout-title">Fastest fix</div>
+              <div class="callout-body">Include your iOS version + app version + what you expected vs what happened.</div>
+            </div>
+            <div class="callout">
+              <div class="callout-title">Data safety</div>
+              <div class="callout-body">Your resolutions are stored on-device and can sync via iCloud if enabled.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Common topics</h2>
+          <ul class="topic-list">
+            <li><a href="#faq" data-scroll>Editing past days</a></li>
+            <li><a href="#faq" data-scroll>iCloud sync</a></li>
+            <li><a href="#faq" data-scroll>Notifications</a></li>
+            <li><a href="#faq" data-scroll>Restore / reinstall</a></li>
+          </ul>
+
+          <hr />
+
+          <h3>Report a bug</h3>
+          <p class="muted">Email with details (no account required).</p>
+          <a id="bugMailto" class="button secondary full" href="#">Email bug report</a>
+          <p class="tiny muted">
+            Tip: add a screenshot if it helps.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p class="muted">Click a question to expand.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>How do I mark a resolution as done or skipped?</summary>
+            <div class="faq-body">
+              Open the dashboard and swipe the card: right for done, left for skipped.
+            </div>
+          </details>
+
+          <details>
+            <summary>Can I edit past days?</summary>
+            <div class="faq-body">
+              Yes. Open a resolution’s review screen and select a day to edit its status and notes.
+            </div>
+          </details>
+
+          <details>
+            <summary>Where is my data stored?</summary>
+            <div class="faq-body">
+              Data is stored on your device. If iCloud is enabled, it can sync via CloudKit to your iCloud account.
+            </div>
+          </details>
+
+          <details>
+            <summary>I reinstalled the app. Can I restore my data?</summary>
+            <div class="faq-body">
+              If iCloud sync was enabled, your data should reappear after the app finishes syncing. If it wasn’t enabled,
+              reinstalling may remove local-only data.
+            </div>
+          </details>
+
+          <details>
+            <summary>Does the app collect analytics or track me?</summary>
+            <div class="faq-body">
+              The app is designed to work without advertising tracking. See the Privacy Policy for specifics.
+            </div>
+          </details>
+
+          <details>
+            <summary>How do notifications work?</summary>
+            <div class="faq-body">
+              Notifications are optional and depend on your device settings. You can enable/disable them in iOS Settings.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Email is the best way to get help.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Email support</h3>
+            <p>Use this for questions, feedback, and help.</p>
+
+            <div class="form">
+              <label>
+                Your email (optional)
+                <input id="email" type="email" placeholder="name@example.com" autocomplete="email" />
+              </label>
+              <label>
+                What do you need help with?
+                <input id="subject" type="text" placeholder="Sync issue, feature request, billing, etc." />
+              </label>
+              <label>
+                Details
+                <textarea id="message" rows="6" placeholder="Describe the issue and steps to reproduce."></textarea>
+              </label>
+
+              <div class="row">
+                <button id="sendBtn" class="button" type="button">Create Email</button>
+                <a class="button secondary" href="privacy.html">Privacy Policy</a>
+              </div>
+
+              <p class="tiny muted">
+                This opens your email app. No form data is sent through this website.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Include this info</h3>
+            <ul class="checklist">
+              <li>App version (Settings → Simply Resolve)</li>
+              <li>iOS version</li>
+              <li>Device model</li>
+              <li>What you expected vs what happened</li>
+              <li>Steps to reproduce</li>
+            </ul>
+
+            <hr />
+
+            <h3>Links</h3>
+            <ul class="link-list">
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="muted">© <span id="year"></span> Simply Resolve</div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
